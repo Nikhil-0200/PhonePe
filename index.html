@@ -6,9 +6,23 @@
     <title>PhonePe</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <div id="main">
+        <div id="overLay2">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <h4>Connecting Securely</h4>
+        </div>
+        <div id="overLay">
+            <div id="box">
+                <div id="loading">
+                    <span class="loader"></span>
+                </div>
+                <h4 id="msg">Initiating Transaction </h4>
+            </div>
+        </div>
         <div id="phone">
             <div id="head">
                 <div id="head-l">
@@ -24,23 +38,36 @@
                     <i class="ri-more-2-fill"></i>
                 </div>
             </div>
-            <div id="m-body">
-                <div id="tran">
-                    <div id="t1">Transfer Money to</div>
-                    <div id="t2">Banking name: NIKHIL TIWARI
-                        <i class="ri-shield-check-fill"></i>
+            <div id="footer">
+                <div id="m-body">
+                    <div id="tran">
+                        <div id="t1">Transfer Money to</div>
+                        <div id="t2">Banking name: NIKHIL TIWARI
+                            <i class="ri-shield-check-fill"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="footer">
+                <div id="t-body">
+                <i id="curr" class="fa fa-inr"></i>     
                 <input id="text" type="text" placeholder="Enter amount or chat">
+                <i id="file" class="ri-file-text-line"></i>
                 <div id="foot-icon">
                 <i class="ri-image-add-fill"></i>
                 <i class="ri-add-circle-line"></i>
                 <i class="ri-send-plane-2-fill"></i>
+                </div>
+                <div id="foot-icon2">
+                    <div id="paytm">
+                        <button><h1>Pay <span id="tm">tm</span></h1></button>
+                        <span id="nu">XX43</span>
+                    </div>
+                    <Button id="pay">PAY</Button>
+                </div> 
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
