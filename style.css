@@ -118,6 +118,10 @@ body, html{
     font-weight: 700;
     opacity: 0;
 }
+#cmt-curr{
+    scale: 0.9;
+    font-weight: 700;
+}
 #file{
     padding-right: 6px;
     /* background-color: aliceblue; */
@@ -153,7 +157,7 @@ body, html{
     height: 80px;
     background-color: white;
     position: relative;
-    top: 360px;
+    top: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,9 +274,8 @@ body, html{
     font-weight: 100;
 }
 
-
-
-.loader {
+.loader1 {
+    z-index: 100;
     width: 40px;
     height: 40px;
     border: 3px solid #0004ff;
@@ -372,3 +375,149 @@ body, html{
         }
       }
       
+
+      #overLay3{
+        width: 20em;
+        height: 85%;
+        background-color: rgb(0, 173, 0);
+        border-radius: 30px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 40;
+        box-sizing: border-box;
+        color: #FFF;
+        display: none;
+    }
+
+    #tick-loader{
+        width: 50%;
+        height: 80px;
+        /* background-color: #0004ff; */
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* display: none; */
+    }
+
+    #overLay4{
+        width: 20em;
+        height: 85%;
+        background-color: rgb(0, 173, 0);
+        border-radius: 30px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 40;
+        box-sizing: border-box;
+        color: #FFF;
+        display: none;
+    }
+
+    #overLay4 > #tick-loader{
+        width: 50%;
+        height: 80px;
+        position: absolute;
+        top: 40%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        /* display: none; */
+    }
+    #overLay4 > #tick-loader > i{
+        font-size: 30px;
+    }
+
+    #tick-loader > i{
+        /* font-size: 30px; */
+        scale: 3.2;
+        position: absolute;
+        color: #ffffffcc;
+        top: 73%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+        /* display: none; */
+
+    }
+    .loader {
+        width: 52px;
+        height: 52px;
+        border: 8px solid #FFF;
+        border-radius: 50%;
+        display: inline-block;   
+        box-sizing: border-box;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        animation: pulse 1s linear infinite;
+        /* display: none; */
+
+      }
+      .loader:after {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        border: 9px solid #ffffffb3;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: scaleUp 1s linear infinite;
+      }
+      
+      @keyframes scaleUp {
+        0% { transform: translate(-50%, -50%) scale(0) }
+        60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+      }
+      @keyframes pulse {
+        0% , 60% , 100%{ transform:  scale(1) }
+        80% { transform:  scale(1.6)}
+      }
+    #pay-cmt{
+        /* background-color: #FFF; */
+        /* border: 2px solid; */
+        font-size: 14px;
+        width: 75%;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #pay-cmt1{
+        /* background-color: #FFF; */
+        /* border: 2px solid; */
+        font-size: 19px;
+        width: 75%;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        top: 52%;   
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #two-btn{
+        /* background-color: red; */
+        width: 70%;
+        height: 50px;
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #two-btn > button{
+        border-radius: 10px;
+        /* width: 90px; */
+        padding: 2px 8px;
+        border: 1.5px solid #FFF;
+        background-color: transparent;
+        color: #FFF;
+        font-weight: 100;
+        /* font-size: 10px; */
+    }

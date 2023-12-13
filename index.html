@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhonePe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
     <div id="main">
+        <div id="overLay3">
+            <div id="tick-loader">
+                <i class="ri-checkbox-circle-fill"></i>
+                <span class="loader"></span>
+            </div>
+            <div id="pay-cmt">
+                <h3>Payment of <i id="cmt-curr" class="fa fa-inr"></i> <span></span> to Nikhil Tiwari successful.</h3>
+            </div>
+            <div id="two-btn">
+                <button>VIEW DETAILS</button>
+                <button>SPLIT EXPENSE</button>
+            </div>
+        </div>
+        <div id="overLay4">
+            <div id="tick-loader"><i class="ri-error-warning-fill"></i></div>
+            <div id="pay-cmt1">
+                <h3></h3>
+            </div>
+        </div>
         <div id="overLay2">
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <h4>Connecting Securely</h4>
@@ -18,7 +38,7 @@
         <div id="overLay">
             <div id="box">
                 <div id="loading">
-                    <span class="loader"></span>
+                    <span class="loader1"></span>
                 </div>
                 <h4 id="msg">Initiating Transaction </h4>
             </div>

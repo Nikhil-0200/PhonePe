@@ -1,0 +1,61 @@
+@media only screen and (max-width: 375px){
+    #main{
+        width: 100%;
+        height: 100vh;
+        background-color: seashell;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    
+    #phone{
+        width: 20em;
+        height: 85%;
+        background-color: rgb(188, 247, 247);
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #footer{
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        position: relative;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 1.5px solid rgba(223, 11, 11, 0.087);
+    }
+
+    #m-body > #tran > #t1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    #m-body > #tran > #t2{
+        font-size: 17px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.705);
+    }
+
+    
+    #two-btn > button{
+        border-radius: 10px;
+        /* width: 90px; */
+        padding: 2px 8px;
+        border: 1.5px solid #FFF;
+        background-color: transparent;
+        color: #FFF;
+        font-weight: 500;
+        /* font-size: 10px; */
+    }
+    
+} 
