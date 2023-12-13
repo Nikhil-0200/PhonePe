@@ -1,6 +1,3 @@
-    // initiating Transaction 
-    // Connecting Securely
-
     let textBox = document.getElementById("text");
     let msg = document.getElementById("msg");
 
@@ -8,20 +5,10 @@
     function leftArrow(){
         let leftArrow = document.querySelector("#head-l > i");
         leftArrow.addEventListener("click", function(){
-            gsap.to("#m-body",{
-                y: 0,
-                opacity: 0,
-            })
-        
-            gsap.to("#curr",{
-                x: 0,
-                opacity: 0,
-            })
-        
-            gsap.to("#text",{
-                opacity: 0,
-            })
-        
+           inputAnimationLogic();
+
+           textBox.value = ""
+
         })
         
     }
@@ -55,32 +42,50 @@
                 
             }
             else{
-                gsap.to("#m-body",{
-                    y: 0,
-                    opacity: 0,
-                })
-        
-                gsap.to("#curr",{
-                    // x: -10,
-                    opacity: 0,
-                })
-                gsap.to("#foot-icon",{
-                    opacity: 1,
-                })
-        
-                gsap.to("#file",{
-                    opacity: 0,
-                })
-        
-                gsap.to("#foot-icon2",{
-                    opacity: 0,
-                })
+
+                inputAnimationLogic();
+                
+                leftArrow();
             }
         
         
         
             
         })
+    }
+
+
+    function inputAnimationLogic(){
+        gsap.to("#m-body",{
+            y: 0,
+            opacity: 0,
+        })
+
+        gsap.to("#curr",{
+            // x: -10,
+            opacity: 0,
+        })
+        gsap.to("#foot-icon",{
+            opacity: 1,
+        })
+
+        gsap.to("#file",{
+            opacity: 0,
+        })
+
+        gsap.to("#foot-icon2",{
+            opacity: 0,
+        })
+
+        gsap.to("#text",{
+            width: "50%"
+        })
+
+        let del = document.getElementById("text")
+        if(del.textContent.trim() === ""){
+            del.textContent = null;
+        }
+
     }
 
     function payAction(){
@@ -171,12 +176,6 @@
             payCmt1.textContent = err;
         })
     } 
-
-    // gsap.to(".loader",{
-    //     display: "block",
-    //     y: 10,
-    // })
-
 
 
     loadingPromise();
